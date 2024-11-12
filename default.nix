@@ -1,4 +1,9 @@
-with import <nixpkgs> { };
+{
+  wrapGAppsHook4,
+  gtk4,
+  gobject-introspection,
+  python3Packages,
+}:
 
 python3Packages.buildPythonApplication {
   pname = "pipeToFdiag";

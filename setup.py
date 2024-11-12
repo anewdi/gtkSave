@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="pipeToSave",
+    name="pipeSave",
     version="0.0.1",
-    scripts=["po2.py"],
+    scripts=["pipeSave.py"],
 )
