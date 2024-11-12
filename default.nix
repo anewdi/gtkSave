@@ -13,7 +13,6 @@ python3Packages.buildPythonApplication {
 
   buildInputs = [
     gtk4
-    libadwaita
   ];
 
   propagatedBuildInputs = with python3Packages; [
