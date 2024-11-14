@@ -10,10 +10,12 @@
       packages.${system}.default = pkgs.callPackage ./default.nix { };
 
       devShells.${system}.default = pkgs.mkShell {
+        inputsFrom = [ self.packages.${system}.default ];
+
         packages = with pkgs; [
           ruff
         ];
-        inputsFrom = [ self.packages.${system}.default ];
+
         shellHook = ''
           export XDG_DATA_DIRS=$GSETTINGS_SCHEMAS_PATH
         '';

@@ -5,8 +5,8 @@
   python3Packages,
 }:
 
-python3Packages.buildPythonApplication {
-  pname = "pipeSave";
+python3Packages.buildPythonApplication rec {
+  pname = "gtkSave";
   version = "0.0.1";
 
   src = ./.;
@@ -28,6 +28,10 @@ python3Packages.buildPythonApplication {
 
   preFixup = ''
     makeWrapperArgs+=("''${gappsWrapperArgs[@]}")
+  '';
+
+  postFixup = ''
+    mv $out/bin/${pname}.py $out/bin/${pname}
   '';
 
 }
