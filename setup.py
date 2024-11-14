@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="gtkSave",
+    name="gtksave",
     version="0.0.1",
-    scripts=["gtkSave.py"],
+    scripts=["gtksave.py"],
 )

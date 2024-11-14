@@ -6,7 +6,7 @@
 }:
 
 python3Packages.buildPythonApplication rec {
-  pname = "gtkSave";
+  pname = "gtksave";
   version = "0.0.1";
 
   src = ./.;
