@@ -34,4 +34,8 @@ python3Packages.buildPythonApplication rec {
     mv $out/bin/${pname}.py $out/bin/${pname}
   '';
 
+  meta = {
+    description = "Uses gtk file dialog to save data from stdin";
+    mainProgram = "gtksave";
+  };
 }
